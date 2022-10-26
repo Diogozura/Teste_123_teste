@@ -41,10 +41,8 @@ export default class MyDocument extends Document {
 
  
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" />
-          <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          />
+          
+     
           
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         </Head>

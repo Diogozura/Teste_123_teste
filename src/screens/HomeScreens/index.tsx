@@ -1,9 +1,12 @@
 
 import Image from 'next/image'
+import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react'
 import { loadDadus } from '../../../pages/api/graphql'
 import { Card, FullCards } from '../../components/Cards'
 
-export default function Home({ dados }) {
+
+
+export default function Home({ dados }: {dados : any} ) {
     const products = dados.products.data
     // console.log(dados.products.data)
     // products.map((p) => {
@@ -15,7 +18,7 @@ export default function Home({ dados }) {
   return (
     <>
       <h1>Hello my friend amigo do povo</h1>
-      <FullCards className='fullCards'>{products.map((id) => (
+      <FullCards className='fullCards'>{products.map((id: { id: Key | null | undefined; quantity: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; price: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined }) => (
           <Card key={id.id} className='card'>
               <p>Disponíveis {id.quantity}</p>
               {/* <Image
