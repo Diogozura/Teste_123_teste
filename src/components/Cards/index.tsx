@@ -17,3 +17,13 @@ export const FullCards = styled.section`
     flex-wrap: wrap;
 
 ` 
+export const Categorias = styled.aside`
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px 5px;
+    padding: 10px;
+`
+export const BlocCategorais = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`
